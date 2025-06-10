@@ -45,9 +45,11 @@
 				<td>{{ $p->pegawai_umur }}</td>
 				<td>{{ $p->pegawai_alamat }}</td>
 				<td>
-					<a href="/pegawai/edit/{{ $p->pegawai_id }}" class="btn btn-success">Edit</a>
-					|
-					<a href="/pegawai/hapus/{{ $p->pegawai_id }}" class="btn btn-danger">Hapus</a>
+					<div class="d-flex">
+						<a href="/pegawai/edit/{{ $p->pegawai_id }}" class="btn btn-success mr-2">Edit</a>
+
+						<a href="/pegawai/hapus/{{ $p->pegawai_id }}" class="btn btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?');">Hapus</a>
+					</div>
 				</td>
 			</tr>
 			@endforeach

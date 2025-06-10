@@ -1,12 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\DosenController;
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('template');
 });
 
 Route::view('tugas-tutorial-css','tugas-tutorial-css');
@@ -19,12 +18,25 @@ Route::view('template', 'template');
 
 
 // Pegawai
+use App\Http\Controllers\PegawaiDBController;
 Route::get('/pegawai', [PegawaiDBController::class, 'index']);
 Route::get('/pegawai/tambah',[PegawaiDBController::class, 'tambah']);
-Route::post('/pegawai/store',[PegawaiDBController::class, 'store']);
 Route::get('/pegawai/edit/{id}',[PegawaiDBController::class, 'edit']);
-Route::post('/pegawai/update',[PegawaiDBController::class, 'update']);
 Route::get('/pegawai/hapus/{id}',[PegawaiDBController::class, 'hapus']);
 Route::get('/pegawai/cari', [PegawaiDBController::class, 'cari']);
 Route::get('/pegawai/input', [PegawaiDBController::class, 'input']);
+Route::post('/pegawai/update',[PegawaiDBController::class, 'update']);
+Route::post('/pegawai/store',[PegawaiDBController::class, 'store']);
 Route::post('/pegawai/proses', [PegawaiDBController::class, 'proses']);
+
+// Buku Tulis
+use App\Http\Controllers\BukuTulisController;
+Route::get('/bukutulis', [BukuTulisController::class ,'index']);
+Route::get('/bukutulis/tambah', [BukuTulisController::class, 'tambah']);
+Route::get('/bukutulis/edit/{id}',[BukuTulisController::class, 'edit']);
+Route::get('/bukutulis/hapus/{id}', [BukuTulisController::class, 'hapus']);
+Route::get('/bukutulis/cari', [BukuTulisController::class, 'cari']);
+Route::get('/bukutulis/input', [BukuTulisController::class, 'input']);
+Route::post('/bukutulis/update',[BukuTulisController::class, 'update']);
+Route::post('/bukutulis/store', [BukuTulisController::class, 'store']);
+Route::post('/bukutulis/proses', [BukuTulisController::class, 'proses']);
