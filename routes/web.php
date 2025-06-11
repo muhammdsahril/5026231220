@@ -40,3 +40,11 @@ Route::get('/bukutulis/input', [BukuTulisController::class, 'input']);
 Route::post('/bukutulis/update',[BukuTulisController::class, 'update']);
 Route::post('/bukutulis/store', [BukuTulisController::class, 'store']);
 Route::post('/bukutulis/proses', [BukuTulisController::class, 'proses']);
+
+
+// Karyawan
+use App\Http\Controllers\KaryawanController;
+Route::get('/karyawan', [KaryawanController::class, 'index']);
+Route::get('/karyawan/tambah', [KaryawanController::class, 'tambah']);
+Route::get('/karyawan/hapus/{id}', [KaryawanController::class, 'hapus']);
+Route::post('/karyawan/store', [KaryawanController::class, 'store']);

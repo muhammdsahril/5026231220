@@ -17,7 +17,7 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #f8f9fa; /* Warna latar belakang yang lembut */
+            background-color: #f8f9fa;
         }
 
         .navbar {
@@ -49,7 +49,7 @@
         }
 
         .nav-link i {
-            margin-right: 8px; /* Jarak antara ikon dan teks */
+            margin-right: 8px;
         }
         
         .content-wrapper {
@@ -57,7 +57,7 @@
             padding: 2.5rem;
             border-radius: 10px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-            margin-top: -50px; /* Konten sedikit menjorok ke atas header */
+            margin-top: -50px;
             position: relative;
             z-index: 10;
         }
@@ -77,16 +77,16 @@
         }
 
         .header-link {
-            color: #FFFFFF; /* Mengatur warna teks menjadi PUTIH secara paksa */
-            text-decoration: none; /* Menghapus garis bawah pada link */
-            transition: color 0.3s ease, transform 0.3s ease; /* Efek transisi halus */
-            display: inline-block; /* Diperlukan untuk efek transform */
+            color: #FFFFFF;
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
         }
 
         .header-link:hover {
-            color: #e0e0e0; /* Warna berubah menjadi putih-abu saat di-hover (feedback visual) */
-            text-decoration: none; /* Memastikan tidak ada garis bawah saat hover */
-            transform: translateY(-2px); /* Memberi efek sedikit terangkat */
+            color: #e0e0e0;
+            text-decoration: none;
+            transform: translateY(-2px);
         }
 
     </style>
@@ -127,7 +127,7 @@
                         <div class="dropdown-menu" aria-labelledby="latihanDropdown">
                             <a class="dropdown-item" href="#">Latihan 1</a>
                             <a class="dropdown-item" href="#">Latihan 2</a>
-                            <a class="dropdown-item" href="#">Latihan 3</a>
+                            <a class="dropdown-item" href="/karyawan">Latihan 3</a>
                         </div>
                     </li>
                 </ul>
