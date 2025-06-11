@@ -33,15 +33,13 @@ class KaryawanController extends Controller {
     }
 
     public function store(Request $request) {
-        $request->validate([
-            'kodepegawai' => 'required|char|size:5|unique:karyawan,kodepegawai',
-            'namalengkap' => 'required|String|max:50',
-            'divisi' => 'required|char|size:5',
-            'departemen' => 'required|String|max:10',
-        ]);
-
-        Karyawan::tambah($request->all());
-
-        return redirect('/karyawan');
+        DB::table('karyawan')->insert([
+		'kodepegawai' => $request->kodepegawai,
+		'namalengkap' => $request->namalengkap,
+		'divisi' => $request->divisi,
+		'departemen' => $request->departemen
+		]);
+		// alihkan halaman
+		return redirect('/karyawan');
     }
 }
