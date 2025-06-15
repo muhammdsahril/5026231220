@@ -125,7 +125,7 @@
                             <i class="fas fa-dumbbell"></i>Latihan
                         </a>
                         <div class="dropdown-menu" aria-labelledby="latihanDropdown">
-                            <a class="dropdown-item" href="#">Latihan 1</a>
+                            <a class="dropdown-item" href="/keranjang">Latihan 1</a>
                             <a class="dropdown-item" href="#">Latihan 2</a>
                             <a class="dropdown-item" href="/karyawan">Latihan 3</a>
                         </div>

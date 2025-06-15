@@ -48,3 +48,10 @@ Route::get('/karyawan', [KaryawanController::class, 'index']);
 Route::get('/karyawan/tambah', [KaryawanController::class, 'tambah']);
 Route::get('/karyawan/hapus/{id}', [KaryawanController::class, 'hapus']);
 Route::post('/karyawan/store', [KaryawanController::class, 'store']);
+
+// Keranjang Belanja
+use App\Http\Controllers\KeranjangBelanjaController;
+Route::get('/keranjang', [KeranjangBelanjaController::class, 'index']);
+Route::get('/keranjang/tambah', [KeranjangBelanjaController::class, 'tambah']);
+Route::get('/keranjang/hapus{id}', [KeranjangBelanjaController::class, 'hapus']);
+Route::post('/keranjang/store', [KeranjangBelanjaController::class, 'store']);
