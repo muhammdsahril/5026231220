@@ -55,3 +55,7 @@ Route::get('/keranjang', [KeranjangBelanjaController::class, 'index']);
 Route::get('/keranjang/tambah', [KeranjangBelanjaController::class, 'tambah']);
 Route::get('/keranjang/hapus{id}', [KeranjangBelanjaController::class, 'hapus']);
 Route::post('/keranjang/store', [KeranjangBelanjaController::class, 'store']);
+
+// Page Counter
+use App\Http\Controllers\PageCounterDBController;
+Route::get('/pagecounter', [PageCounterDBController::class, 'index']);

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Portfolio | Muhammad Sahril - 5026231220</title>
+    <title>Muhammad Sahril - 5026231220</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -126,7 +126,7 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="latihanDropdown">
                             <a class="dropdown-item" href="/keranjang">Latihan 1</a>
-                            <a class="dropdown-item" href="#">Latihan 2</a>
+                            <a class="dropdown-item" href="/pagecounter">Latihan 2</a>
                             <a class="dropdown-item" href="/karyawan">Latihan 3</a>
                         </div>
                     </li>
