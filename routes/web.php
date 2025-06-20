@@ -40,6 +40,8 @@ Route::get('/bukutulis/input', [BukuTulisController::class, 'input']);
 Route::post('/bukutulis/update',[BukuTulisController::class, 'update']);
 Route::post('/bukutulis/store', [BukuTulisController::class, 'store']);
 Route::post('/bukutulis/proses', [BukuTulisController::class, 'proses']);
+Route::post('/bukutulis/proses', [BukuTulisController::class, 'proses']);
+
 
 
 // Karyawan
@@ -59,3 +61,5 @@ Route::post('/keranjang/store', [KeranjangBelanjaController::class, 'store']);
 // Page Counter
 use App\Http\Controllers\PageCounterDBController;
 Route::get('/pagecounter', [PageCounterDBController::class, 'index']);
+
+

@@ -118,7 +118,7 @@
                         <a class="nav-link" href="/bukutulis"><i class="fas fa-book"></i>Tugas CRUD</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-file-alt"></i>EAS</a>
+                        <a class="nav-link" href="/namaroute"><i class="fas fa-file-alt"></i>EAS</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="latihanDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
